@@ -22,7 +22,7 @@ const questions = [
     {
       type: 'input',
       name: 'contribution',
-      message: 'What are the contribution guidlinesfor for the project',
+      message: 'What are the contribution guidlines for the project?',
     },
     {
         type: 'input',
@@ -53,7 +53,7 @@ const generateReadMe = (answers) =>
   1. [Description](##description)
   2. [Installation Instructions](##installation-instructions)
   3. [Usage Information](##usage-information)
-  4. [Contributions Guidelines](##contributions-guidelines)
+  4. [Contributions Guidelines](##contribution-guidelines)
   5. [Test Instructions](##test-instructions)
   6. [Questions](##questions)
 
