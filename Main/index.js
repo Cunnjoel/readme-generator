@@ -46,14 +46,34 @@ const questions = [
         message: 'What is your e-mail address?',
       },
 ];
-const generateReadMe = (answers) =>`
-    ${answers.title};
-    Description: ${answers.description};
-    Installation Instructions: ${answers.installation};
-    Usage Information: ${answers.contribution};
-    Contribution Guidelines: ${answers.test};
-    Test Instructions: ${answers.license};
-    Questions: <a href = "github.com/${answers.github}">Github</a>; <a href = "${answers.email}">${answers.email}</a>; 
+const generateReadMe = (answers) =>
+` # ${answers.title}
+
+  ## Table of Contents
+    1. [Description](#description)
+    2. [Installation Instructions](#installation)
+    3. [Usage Information](#contribution)
+    4. [Contributions Guidelines](#test)
+    5. [Test Instructions](#license)
+    6. [Questions](#questions)
+
+  ## Description:<a name="description"></a>
+    ${answers.description}
+
+  ## Installation Instructions:<a name="installation"></a>
+    ${answers.installation}
+
+  ## Usage Information:<a name="contribution"></a>
+    ${answers.contribution}
+
+  ## Contribution Guidelines:<a name="test"></a>
+    ${answers.test}
+
+  ## Test Instructions:<a name="license"></a>
+    ${answers.license}
+
+  ## Questions:<a name="questions"></a>
+    http://www.github.com/${answers.github}; http://${answers.email}
 `
 
 // TODO: Create a function to write README file
