@@ -16,7 +16,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'installation ',
+        name: 'installation',
         message: 'What are the installation instructions for the project?',
       },
     {
@@ -50,31 +50,32 @@ const generateReadMe = (answers) =>
 ` # ${answers.title}
 
   ## Table of Contents
-    1. [Description](#description)
-    2. [Installation Instructions](#installation)
-    3. [Usage Information](#contribution)
-    4. [Contributions Guidelines](#test)
-    5. [Test Instructions](#license)
-    6. [Questions](#questions)
+  1. [Description](##description)
+  2. [Installation Instructions](##installation-instructions)
+  3. [Usage Information](##usage-information)
+  4. [Contributions Guidelines](##contributions-guidelines)
+  5. [Test Instructions](##test-instructions)
+  6. [Questions](##questions)
 
-  ## Description:<a name="description"></a>
-    ${answers.description}
+  ## Description:
+  ${answers.description}
 
-  ## Installation Instructions:<a name="installation"></a>
-    ${answers.installation}
+  ## Installation Instructions:
+  ${answers.installation}
 
-  ## Usage Information:<a name="contribution"></a>
-    ${answers.contribution}
+  ## Usage Information:
+  ${answers.contribution}
 
-  ## Contribution Guidelines:<a name="test"></a>
-    ${answers.test}
+  ## Contribution Guidelines:
+  ${answers.test}
 
-  ## Test Instructions:<a name="license"></a>
-    ${answers.license}
+  ## Test Instructions:
+  ${answers.license}
 
-  ## Questions:<a name="questions"></a>
-    http://www.github.com/${answers.github}
-    E-mail me here for any further questions: ${answers.email}
+  ## Questions:
+  My Github: http://www.github.com/${answers.github}
+
+  E-mail me here for any further questions: ${answers.email}
 `
 
 // TODO: Create a function to write README file
