@@ -73,7 +73,8 @@ const generateReadMe = (answers) =>
     ${answers.license}
 
   ## Questions:<a name="questions"></a>
-    http://www.github.com/${answers.github}; http://${answers.email}
+    http://www.github.com/${answers.github}
+    E-mail me here for any further questions: ${answers.email}
 `
 
 // TODO: Create a function to write README file
